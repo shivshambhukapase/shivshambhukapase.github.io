@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://parshuramkalunkhe.github.io/" />
+    <meta property="og:title" content="Parshuram Kalunkhe" />
+    <meta property="og:description" content="Hi, I&rsquo;m Parshuram Kalunkhe&hellip;and 
+  I am Geek, who loves Computers and Software. I am also a Linux Youtuber." />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="canonical" href="https://parshuramkalunkhe.github.io/" />
+    <link rel="shortcut icon" href="/assets/favicon_io/tux.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="p-container">
+        <h1>Practical No. 7</h1>
+        <br>
+        <h4>Write a program to shuffle Deck of cards.</h4>
+        <br>
+        <h3>Input :</h3>
+        <br>
+        <pre>
+        <code>
+            # import modules 
+            import itertools, random 
+
+            # make a deck of cards
+            deck = list(itertools.product(range(1,14),['Spade','Heart','Diamond','Club'])) 
+
+            # shuffle the cards
+            random.shuffle(deck) 
+
+            # draw five cards 
+            print("You got:")
+            for i in range(5):
+                print(deck[i][0], "of", deck[i][1])
+        </code>
+        </pre>
+        <br>
+        <h3>Output :</h3> <br>
+        <img src="/assets/pages/img/blog8.png" alt="blog8.png" style="width: 600px;">
+    </div>
+</body>
+
+</html>

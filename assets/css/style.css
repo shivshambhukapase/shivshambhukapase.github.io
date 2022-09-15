@@ -1,0 +1,257 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Edu+SA+Beginner:wght@400;500;600;700&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap');
+
+/*    
+ font-family: 'Edu NSW ACT Foundation', cursive;
+ font-family: 'Edu SA Beginner', cursive;
+ font-family: 'Edu VIC WA NT Beginner', cursive;
+*/
+/* This is root */
+:root {
+  /* color scheme */
+  /* body color */
+  --background-color: #000000;
+  --foreground-color: #ffffff;
+
+  /* color #1 */
+  --pink-light-color: #ffc0cb;
+  --pink-dark-color: #ff1493;
+  --red-light-color: #ff8686;
+  --red-dark-color: #ff0000;
+  --orange-light-color: #ffa500;
+  --orange-dark-color: #ff4500;
+  --aqua-light-color: #7fffd4;
+  --aqua-dark-color: #00ffff;
+
+  /* solarized color */
+  --solarized-yellow: #b58900;
+  --solarized-orange: #cb4b16;
+  --solarized-red: #dc322f;
+  --solarized-magenta: #d33682;
+  --solarized-violet: #6c71c4;
+  --solarized-blue: #0078ce;
+  --solarized-cyan: #2aa198;
+  --solarized-green: #859900;
+
+  /* neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+
+
+}
+
+
+* {
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  background: var(--background-color);
+  padding: 0;
+  margin: 0;
+}
+
+/* This is for main html page index.html  */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* list style none */
+li {
+  list-style: none;
+}
+
+/* links */
+.l-nav_link {
+  background: none;
+  text-decoration: none;
+  color: var(--aqua-dark-color);
+}
+
+.l-nav_link:hover {
+  color: var(--aqua-light-color);
+  text-shadow:
+    0 0 7px var(--aqua-dark-color),
+    0 0 10px var(--aqua-dark-color),
+    0 0 21px var(--aqua-dark-color),
+    0 0 42px var(--aqua-dark-color),
+    0 0 82px var(--aqua-dark-color),
+    0 0 92px var(--aqua-dark-color),
+    0 0 102px var(--aqua-dark-color),
+    0 0 151px var(--aqua-dark-color);
+  text-decoration: underline;
+}
+
+/* logo = ~tux. */
+.l-logo {
+  color: var(--pink-dark-color);
+  font-size: 1.5rem;
+}
+
+.l-logo:hover {
+  color: var(--pink-light-color);
+  text-shadow:
+    0 0 7px var(--pink-dark-color),
+    0 0 10px var(--pink-dark-color),
+    0 0 21px var(--pink-dark-color),
+    0 0 42px var(--pink-dark-color),
+    0 0 82px var(--pink-dark-color),
+    0 0 92px var(--pink-dark-color),
+    0 0 102px var(--pink-dark-color),
+    0 0 151px var(--pink-dark-color),
+    0 0 186px var(--pink-dark-color),
+    0 0 202px var(--pink-dark-color),
+    0 0 251px var(--pink-dark-color),
+    0 0 291px var(--pink-dark-color);
+}
+
+/* navbar list = l-nav */
+.l-nav {
+  margin: 6px;
+}
+
+.l-nav span {
+  display: block;
+  margin: .5rem;
+}
+
+
+/* navbar */
+.l-navbar {
+  border: var(--pink-dark-color) solid 2px;
+  box-shadow: 1px 1px 2px var(--aqua-dark-color);
+  text-align: center;
+  padding: 10px;
+  height: fit-content;
+  margin: 4px;
+  width: 12%;
+}
+
+/* content */
+.l-content {
+  box-shadow: 1px 1px 2px var(--aqua-dark-color);
+  border: #FF1493 solid 2px;
+  margin: 4px;
+  width: 88%;
+}
+
+/* main */
+.l-main {
+  justify-content: space-between;
+  display: flex;
+  height: 800px;
+  margin: auto;
+  width: 900px;
+  padding-top: 4rem;
+}
+
+/* iframe */
+.responsive-frame {
+  height: 100%;
+  width: 100%;
+}
+
+/* footer */
+.l-footer {
+  text-align: center;
+  color: #ff34a0;
+  margin: 1rem;
+}
+
+/* close of main page index.html */
+
+/* start of pages */
+/* The first page of pages dir /pages/home.index */
+
+.p-container {
+  background: var(--background-color);
+  color: var(--foreground-color);
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  max-width: 800px;
+  margin: auto;
+  padding: 48px;
+}
+
+.p-logo {
+  text-decoration: none;
+}
+
+.p-quotes {
+  color: orangered;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.p-parshuram {
+  color: orange;
+  text-shadow: 1px 1px 2px orangered;
+}
+
+.p-kalunkhe {
+  color: var(--neon-border-color);
+  text-shadow: 1px 1px 2px var(--solarized-blue);
+}
+
+/* The first page of pages end here /pages/home.index */
+
+/* The second page of pages start here /pages/about.index */
+
+
+
+/* The second page of pages end here /pages/about.index */
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  /* The start of main html page index.html */
+  .l-main {
+    display: block;
+    width: min(90%, 1000px);
+    margin-inline: auto;
+    padding-top: 14px;
+    height: auto;
+  }
+
+  .l-navbar {
+    width: 100%;
+    padding: 50px 0;
+    height: 100px;
+    box-shadow: none;
+    border: none;
+  }
+
+  .l-nav span {
+    display: inline-block;
+    margin: 16px;
+  }
+
+  .l-content {
+    box-shadow: 1px 1px 2px cyan;
+    border: #FF1493 solid 2px;
+    background: #000000;
+    margin: 4px;
+    width: 100%;
+    height: 600px;
+  }
+
+  .l-footer {
+    text-align: bottom;
+    color: #ff34a0;
+  }
+
+  /* The end of main html page index.html */
+
+  /* The first page of pages dir /pages/home.index */
+  .container {
+    margin: .5rem;
+    padding: 8px;
+  }
+ 
+  .p-container img {
+    margin: 250px;
+  }
+
+  /* The end page of pages dir /pages/home.index */
+}
